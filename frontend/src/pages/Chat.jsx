@@ -82,7 +82,7 @@ function Chat() {
       const apiMessages = newMessages.filter((m) => m !== GREETING).map((m) => ({
         role: m.sender === 'user' ? 'user' : 'assistant', content: m.text,
       }));
-      const response = await fetch('http://localhost:5000/api/chat', {
+      const response = await fetch('https://mindspace-jjgj.onrender.com/api/chat', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: apiMessages }),
       });
