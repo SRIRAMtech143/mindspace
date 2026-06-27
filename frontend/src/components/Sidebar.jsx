@@ -9,6 +9,7 @@ const links = [
   { to: '/breathing', label: 'Breathing', icon: 'ti-wind' },
   { to: '/chat', label: 'AI Support', icon: 'ti-message-circle' },
   { to: '/resources', label: 'Resources', icon: 'ti-books' },
+  { to: '/assessment', label: 'Assessment', icon: 'ti-clipboard-check' },
 ];
 
 function Sidebar({ onLogout, userEmail }) {

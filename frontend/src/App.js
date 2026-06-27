@@ -10,6 +10,7 @@ import Journal from './pages/Journal';
 import Chat from './pages/Chat';
 import Resources from './pages/Resources';
 import Breathing from './pages/Breathing';
+import Assessment from './pages/Assessment';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -47,6 +48,7 @@ function App() {
               <Route path="/chat" element={<Chat />} />
               <Route path="/resources" element={<Resources />} />
               <Route path="/breathing" element={<Breathing />} />
+              <Route path="/assessment" element={<Assessment />} />
             </Routes>
           </div>
         </div>
